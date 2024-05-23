@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="schach.css">
+    <script src="chess.js"></script>
+</head>
+<body>
+    <h2 class="head">Chess!</h2>
+    <h3 id="announce"></h3>
+    <div class="gameArea">
+        <div class="blueTable">
+            <!-- Black Pieces -->
+            <div draggable="true" id="a8" class="cell bright"><img src="br.png" alt="b_rook piece"></div>
+            <div draggable="true" id="b8" class="cell dark"><img src="bh.png" alt="b_knight piece"></div>
+            <div draggable="true" id="c8" class="cell bright"><img src="bb.png" alt="b_bishop piece"></div>
+            <div draggable="true" id="d8" class="cell dark"><img src="bq.png" alt="b_queen piece"></div>
+            <div draggable="true" id="e8" class="cell bright"><img src="bk.png" alt="b_king piece"></div>
+            <div draggable="true" id="f8" class="cell dark"><img src="bb.png" alt="b_bishop piece"></div>
+            <div draggable="true" id="g8" class="cell bright"><img src="bh.png" alt="b_knight piece"></div>
+            <div draggable="true" id="h8" class="cell dark"><img src="br.png" alt="b_rook piece"></div>
+
+            <div draggable="true" id="a7" class="cell dark"><img src="bp.png" alt="b_pawn piece"></div>
+            <div draggable="true" id="b7" class="cell bright"><img src="bp.png" alt="b_pawn piece"></div>
+            <div draggable="true" id="c7" class="cell dark"><img src="bp.png" alt="b_pawn piece"></div>
+            <div draggable="true" id="d7" class="cell bright"><img src="bp.png" alt="b_pawn piece"></div>
+            <div draggable="true" id="e7" class="cell dark"><img src="bp.png" alt="b_pawn piece"></div>
+            <div draggable="true" id="f7" class="cell bright"><img src="bp.png" alt="b_pawn piece"></div>
+            <div draggable="true" id="g7" class="cell dark"><img src="bp.png" alt="b_pawn piece"></div>
+            <div draggable="true" id="h7" class="cell bright"><img src="bp.png" alt="b_pawn piece"></div>
+
+            <!-- Empty Cells -->
+            <div id="a6" class="cell bright"></div>
+            <div id="b6" class="cell dark"></div>
+            <div id="c6" class="cell bright"></div>
+            <div id="d6" class="cell dark"></div>
+            <div id="e6" class="cell bright"></div>
+            <div id="f6" class="cell dark"></div>
+            <div id="g6" class="cell bright"></div>
+            <div id="h6" class="cell dark"></div>
+
+            <!-- Empty Cells -->
+            <div id="a5" class="cell dark"></div>
+            <div id="b5" class="cell bright"></div>
+            <div id="c5" class="cell dark"></div>
+            <div id="d5" class="cell bright"></div>
+            <div id="e5" class="cell dark"></div>
+            <div id="f5" class="cell bright"></div>
+            <div id="g5" class="cell dark"></div>
+            <div id="h5" class="cell bright"></div>
+
+            <!-- Empty Cells -->
+            <div id="a4" class="cell bright"></div>
+            <div id="b4" class="cell dark"></div>
+            <div id="c4" class="cell bright"></div>
+            <div id="d4" class="cell dark"></div>
+            <div id="e4" class="cell bright"></div>
+            <div id="f4" class="cell dark"></div>
+            <div id="g4" class="cell bright"></div>
+            <div id="h4" class="cell dark"></div>
+            
+            <!-- Empty Cells -->
+            <div id="a3" class="cell dark"></div>
+            <div id="b3" class="cell bright"></div>
+            <div id="c3" class="cell dark"></div>
+            <div id="d3" class="cell bright"></div>
+            <div id="e3" class="cell dark"></div>
+            <div id="f3" class="cell bright"></div>
+            <div id="g3" class="cell dark"></div>
+            <div id="h3" class="cell bright"></div>            
+
+            <!-- White Pieces -->
+            <div draggable="true" id="a2" class="cell bright"><img src="wp.png" alt="w_pawn piece"></div>
+            <div draggable="true" id="b2" class="cell dark"><img src="wp.png" alt="w_pawn piece"></div>
+            <div draggable="true" id="c2" class="cell bright"><img src="wp.png" alt="w_pawn piece"></div>
+            <div draggable="true" id="d2" class="cell dark"><img src="wp.png" alt="w_pawn piece"></div>
+            <div draggable="true" id="e2" class="cell bright"><img src="wp.png" alt="w_pawn piece"></div>
+            <div draggable="true" id="f2" class="cell dark"><img src="wp.png" alt="w_pawn piece"></div>
+            <div draggable="true" id="g2" class="cell bright"><img src="wp.png" alt="w_pawn piece"></div>
+            <div draggable="true" id="h2" class="cell dark"><img src="wp.png" alt="w_pawn piece"></div>
+
+            <div draggable="true" id="a1" class="cell dark"><img src="wr.png" alt="w_rook piece"></div>
+            <div draggable="true" id="b1" class="cell bright"><img src="wh.png" alt="w_knight piece"></div>
+            <div draggable="true" id="c1" class="cell dark"><img src="wb.png" alt="w_bishop piece"></div>
+            <div draggable="true" id="d1" class="cell bright"><img src="wq.png" alt="w_queen piece"></div>
+            <div draggable="true" id="e1" class="cell dark"><img src="wk.png" alt="w_king piece"></div>
+            <div draggable="true" id="f1" class="cell bright"><img src="wb.png" alt="w_bishop piece"></div>
+            <div draggable="true" id="g1" class="cell dark"><img src="wh.png" alt="w_knight piece"></div>
+            <div draggable="true" id="h1" class="cell bright"><img src="wr.png" alt="w_rook piece"></div>
+        </div>
+    </div>
+    <div><button onclick="backWard()">zurück</button></div>
+</body>
+</html>
